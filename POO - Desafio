@@ -1,0 +1,32 @@
+###Diagrama UML
+´´´
+classDiagram
+    class iPhone {
+        +ReprodutorMusical()
+        +Telefone()
+        +Internet()
+    }
+
+    class ReprodutorMusical {
+        +tocar()
+        +pausar()
+        +selecionarMusica(String musica)
+    }
+
+    class Telefone {
+        +ligar(String numero)
+        +atender()
+        +iniciarCorreioVoz()
+    }
+
+    class Internet {
+        +exibirPagina(String url)
+        +adicionarNovaAba()
+        +atualizarPagina()
+    }
+
+    iPhone ..> ReprodutorMusical 
+    iPhone ..> Telefone 
+    iPhone ..> Internet 
+´´´
+  
